@@ -1,0 +1,434 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-16T00:52:05.755Z",
+        "line": 5,
+        "name": "Successful Login",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;successful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 475998400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Base URI \"https://reqres.in/api/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/login\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1468505100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_logs_in_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Valid statuscode \"200\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38999800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Token is generated",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.token_is_generated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-16T00:52:07.773Z",
+        "line": 12,
+        "name": "UnSuccessful Login",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;unsuccessful-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Base URI \"https://reqres.in/api/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/login\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 375732100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User logs in with missing password",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_logs_in_with_missing_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Valid statuscode \"400\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"400\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3004200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Error message \"Missing password\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Missing password\"",
+                  "offset": 14
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.error_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-16T00:52:08.160Z",
+        "line": 19,
+        "name": "Get SingleUser Details",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;get-singleuser-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Base URI \"https://reqres.in/api/users/2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users/2\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120001600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User requests a single user details",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_requests_a_single_user_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1018900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Valid statuscode \"200\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9981800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User details are displayed",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_details_are_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-16T00:52:08.301Z",
+        "line": 26,
+        "name": "Get AllUser Details",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;get-alluser-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Base URI \"https://reqres.in/api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User requests all user details",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_requests_all_user_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Valid statuscode \"200\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 993200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "All User details are displayed",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.all_user_details_are_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-16T00:52:08.311Z",
+        "line": 33,
+        "name": "Create new User",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;create-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Base URI \"https://reqres.in/api/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 400605400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user privides new user details to create",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_privides_new_user_details_to_create()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Valid statuscode \"201\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3002400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Id id generated for the new user",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.id_id_generated_for_the_new_user()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-16T00:52:08.721Z",
+        "line": 40,
+        "name": "Update User Details",
+        "description": "",
+        "id": "basic-crud-on-reqres-api;update-user-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Base URI \"https://reqres.in/api/users/2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://reqres.in/api/users/2\"",
+                  "offset": 9
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.base_uri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 397712600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user privides user details to update",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.user_privides_user_details_to_update()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Valid statuscode \"200\" is generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 17
+                }
+              ],
+              "location": "api.test.stepdefinitions.StepDefinitions.valid_statuscode_is_generated(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Updated details are displayed",
+            "match": {
+              "location": "api.test.stepdefinitions.StepDefinitions.updated_details_are_displayed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Basic CRUD on ReqRes API",
+    "description": "",
+    "id": "basic-crud-on-reqres-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/api/test/features/crud.feature",
+    "tags": []
+  }
+]

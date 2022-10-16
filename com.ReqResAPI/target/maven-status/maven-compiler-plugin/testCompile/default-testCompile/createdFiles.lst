@@ -1,0 +1,15 @@
+POJOclasses\LoginReqPOJO.class
+POJOclasses\LoginRespPOJO.class
+api\test\stepdefinitions\StepDefinitions.class
+ReqResAPIFramework\LoginSuccesful.class
+api\test\base\BaseAPI.class
+api\test\utilities\Constants.class
+POJOclasses\UpdateUserReqPOJO.class
+api\test\utilities\CommonUtilities.class
+POJOclasses\CreateUserRespPOJO.class
+POJOclasses\UpdateUserRespPOJO.class
+POJOclasses\CreateUserReqPOJO.class
+ReqResAPIFramework\CreateUser.class
+ReqResAPIFramework\LoginUnsuccessful.class
+ReqResAPIFramework\UpdateUser.class
+api\test\runner\Runner.class
